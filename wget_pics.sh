@@ -15,4 +15,12 @@ done < outfile
 #3  有一个找好的文本文件，demo.txt
 #   运行  #tr -d '\r' <demo.txt> pic_urls_01.txt
 #   再运行这个脚本  #./wget_pics.sh
+
+#while read url
+#do
+#dowget -b "$url" -P /dev/imgs/
+#done < pic_urls_01.txt
+
+
 # 权限不够就chmod 777 wget_pics.sh
+
