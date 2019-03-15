@@ -1,4 +1,5 @@
 #!/bin/bash
+#这一行也是必要的
 
 # 1 先把写满链接的urls.txt文件通过linux bash 输入：
 #   tr -d '\r' < infile > outfile    其中infile就是urls.txt,outfile是格式化后的文件
@@ -16,6 +17,7 @@ done < outfile
 #   运行  #tr -d '\r' <demo.txt> pic_urls_01.txt
 #   再运行这个脚本  #./wget_pics.sh
 
+##!/bin/bash
 #while read url
 #do
 #dowget -b "$url" -P /dev/imgs/
