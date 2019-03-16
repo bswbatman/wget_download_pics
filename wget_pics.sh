@@ -26,3 +26,10 @@ done < outfile
 
 # 权限不够就chmod 777 wget_pics.sh
 
+for (( i = 0; i < 20; i++))
+do
+    while read url
+    do
+    dowget -b "$url" -P /dev/imgs/
+    done < outfile
+done
